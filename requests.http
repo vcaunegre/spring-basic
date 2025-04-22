@@ -2,4 +2,11 @@
 GET http://localhost:8080/hello
 Authorization: Basic user password
 
-###
+### POST create new user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}
